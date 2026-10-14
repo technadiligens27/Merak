@@ -1,0 +1,587 @@
+
+/* ========================================
+   SENSORY BOARD SECTION — BASE / DESKTOP
+======================================== */
+
+.sensory-board-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: #FFF9F0;
+
+  box-sizing: border-box;
+}
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+.sensory-board-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+  max-width: 1500px;
+
+  padding: 40px 50px 60px;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+/* ========================================
+   TRENDING BADGE
+======================================== */
+
+.sensory-board-trending {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-width: 155px;
+  height: 36px;
+
+  padding: 4px 20px;
+
+  background-color: #FFB027;
+  border-radius: 30px;
+
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
+
+  color: #FFFFFF;
+
+  box-sizing: border-box;
+}
+
+.sensory-board-trending-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* ========================================
+   SECTION HEADING
+======================================== */
+
+.sensory-board-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+  padding-top: 22px;
+}
+
+.sensory-board-header h2 {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Reem Kufi", sans-serif;
+  font-size: clamp(48px, 4.2vw, 70px);
+  font-weight: 700;
+  line-height: 1.08;
+
+  letter-spacing: -1.5px;
+  color: #050505;
+}
+
+.sensory-board-header h2 span {
+  display: block;
+}
+
+.sensory-board-header p {
+  width: 100%;
+  max-width: 950px;
+
+  margin: 25px 0 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.45;
+
+  color: #6D6B66;
+}
+
+/* ========================================
+   CARD CONTAINER
+======================================== */
+
+.sensory-board-card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  width: 100%;
+
+  padding-top: 35px;
+}
+
+/* ========================================
+   INDIVIDUAL CARD
+======================================== */
+
+.sensory-board-card {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+  min-width: 0;
+
+  background-color: #FFFFFF;
+
+  border-radius: 25px;
+  overflow: hidden;
+
+  box-shadow: 0 7px 33px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* ========================================
+   CARD IMAGE
+======================================== */
+
+.sensory-board-card-image {
+  width: 100%;
+  height: 260px;
+
+  overflow: hidden;
+}
+
+.sensory-board-card-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.4s ease;
+}
+
+/* ========================================
+   CARD CONTENT
+======================================== */
+
+.sensory-board-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  flex: 1;
+
+  width: 100%;
+  min-height: 215px;
+
+  padding: 28px 30px 35px;
+
+  box-sizing: border-box;
+}
+
+/* ========================================
+   CARD TAG
+======================================== */
+
+.sensory-board-card-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 5px 13px;
+
+  border-radius: 25px;
+
+  background-color: #FFE1A8;
+  color: #A16A13;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.sensory-board-tag-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* ========================================
+   CARD TYPOGRAPHY
+======================================== */
+
+.sensory-board-card-content h3 {
+  margin: 16px 0 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: #252F2D;
+}
+
+.sensory-board-card-content p {
+  margin: 13px 0 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  color: #84918B;
+}
+
+/* ========================================
+   SECTION BUTTON
+======================================== */
+
+.sensory-board-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  padding-top: 45px;
+}
+
+.sensory-board-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 25px;
+
+  min-width: 270px;
+  min-height: 55px;
+
+  padding: 10px 25px;
+
+  background-color: #FFB027;
+  border-radius: 12px;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: #FFFFFF;
+  text-decoration: none;
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+
+  box-sizing: border-box;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.sensory-board-btn-arrow {
+  font-family: Arial, sans-serif;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* ========================================
+   HOVER EFFECTS
+======================================== */
+
+@media (hover: hover) {
+  .sensory-board-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  .sensory-board-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .sensory-board-btn:hover {
+    background-color: #F2A21F;
+    transform: translateY(-3px);
+  }
+}
+
+.sensory-board-btn:focus-visible {
+  outline: 3px solid #252F2D;
+  outline-offset: 4px;
+}
+
+/* ========================================
+   LARGE DESKTOPS — 1440px+
+======================================== */
+
+@media (min-width: 1440px) {
+  .sensory-board-content {
+    padding: 45px 60px 70px;
+  }
+
+  .sensory-board-header h2 {
+    font-size: 70px;
+  }
+
+  .sensory-board-card-image {
+    height: 280px;
+  }
+}
+
+/* ========================================
+   LAPTOPS — 1025px to 1439px
+======================================== */
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .sensory-board-content {
+    padding: 40px 50px 60px;
+  }
+
+  .sensory-board-header h2 {
+    font-size: clamp(50px, 4.4vw, 65px);
+  }
+
+  .sensory-board-header p {
+    font-size: 23px;
+  }
+
+  .sensory-board-card-container {
+    gap: 20px;
+  }
+
+  .sensory-board-card-image {
+    height: 220px;
+  }
+
+  .sensory-board-card-content {
+    padding: 22px 22px 28px;
+  }
+
+  .sensory-board-card-content h3 {
+    font-size: 23px;
+  }
+
+  .sensory-board-card-content p {
+    font-size: 16px;
+  }
+}
+
+/* ========================================
+   TABLETS — 769px to 1024px
+======================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sensory-board-content {
+    padding: 40px 35px 60px;
+  }
+
+  .sensory-board-header h2 {
+    font-size: 52px;
+  }
+
+  .sensory-board-header p {
+    font-size: 22px;
+  }
+
+  .sensory-board-card-container {
+    gap: 15px;
+  }
+
+  .sensory-board-card-image {
+    height: 190px;
+  }
+
+  .sensory-board-card-content {
+    min-height: 240px;
+    padding: 18px;
+  }
+
+  .sensory-board-card-content h3 {
+    font-size: 21px;
+  }
+
+  .sensory-board-card-content p {
+    font-size: 15px;
+  }
+}
+
+/* ========================================
+   SMALL TABLETS — 481px to 768px
+======================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .sensory-board-content {
+    padding: 35px 30px 55px;
+  }
+
+  .sensory-board-header h2 {
+    font-size: clamp(38px, 6vw, 52px);
+  }
+
+  .sensory-board-header p {
+    font-size: 21px;
+    margin-top: 18px;
+  }
+
+  .sensory-board-card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .sensory-board-card {
+    flex: 0 1 calc(50% - 10px);
+  }
+
+  .sensory-board-card:last-child {
+    flex-basis: calc(50% - 10px);
+  }
+
+  .sensory-board-card-image {
+    height: 190px;
+  }
+
+  .sensory-board-card-content {
+    min-height: 210px;
+    padding: 20px;
+  }
+
+  .sensory-board-card-content h3 {
+    font-size: 21px;
+  }
+
+  .sensory-board-card-content p {
+    font-size: 16px;
+  }
+
+  .sensory-board-btn-container {
+    padding-top: 35px;
+  }
+}
+
+/* ========================================
+   MOBILE — 480px AND BELOW
+======================================== */
+
+@media (max-width: 480px) {
+  .sensory-board-content {
+    padding: 30px 20px 50px;
+  }
+
+  .sensory-board-trending {
+    min-width: 120px;
+    height: 32px;
+    font-size: 15px;
+  }
+
+  .sensory-board-header {
+    padding-top: 20px;
+  }
+
+  .sensory-board-header h2 {
+    font-size: clamp(32px, 8.5vw, 43px);
+    letter-spacing: -0.5px;
+  }
+
+  .sensory-board-header p {
+    font-size: 19px;
+    line-height: 1.4;
+    margin-top: 18px;
+  }
+
+  .sensory-board-card-container {
+    flex-direction: column;
+    gap: 22px;
+    padding-top: 28px;
+  }
+
+  .sensory-board-card {
+    flex: none;
+    width: 100%;
+    border-radius: 22px;
+  }
+
+  .sensory-board-card-image {
+    height: 220px;
+  }
+
+  .sensory-board-card-content {
+    min-height: auto;
+    padding: 22px 24px 30px;
+  }
+
+  .sensory-board-card-content h3 {
+    font-size: 24px;
+  }
+
+  .sensory-board-card-content p {
+    font-size: 17px;
+  }
+
+  .sensory-board-btn-container {
+    padding-top: 32px;
+  }
+
+  .sensory-board-btn {
+    min-width: 230px;
+    min-height: 50px;
+    font-size: 20px;
+  }
+}
+
+/* ========================================
+   VERY SMALL MOBILE — 360px AND BELOW
+======================================== */
+
+@media (max-width: 360px) {
+  .sensory-board-content {
+    padding: 25px 15px 40px;
+  }
+
+  .sensory-board-header h2 {
+    font-size: 31px;
+    line-height: 1.15;
+  }
+
+  .sensory-board-header p {
+    font-size: 17px;
+  }
+
+  .sensory-board-card-image {
+    height: 190px;
+  }
+
+  .sensory-board-card-content {
+    padding: 18px 20px 25px;
+  }
+}
+
+/* ========================================
+   REDUCED MOTION ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .sensory-board-card,
+  .sensory-board-card-image img,
+  .sensory-board-btn {
+    transition: none;
+  }
+}

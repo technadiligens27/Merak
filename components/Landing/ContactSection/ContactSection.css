@@ -1,0 +1,440 @@
+
+/* ========================================
+   CONTACT SECTION — BASE / DESKTOP
+======================================== */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 500px;
+
+  background-color: #FFF9F0;
+
+  box-sizing: border-box;
+}
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+.contact-section-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 55px;
+
+  width: 100%;
+  max-width: 1500px;
+
+  padding: 70px 50px;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+/* ========================================
+   LEFT IMAGE CONTAINER
+======================================== */
+
+.contact-section-image-container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 46%;
+  min-width: 0;
+
+  height: 470px;
+
+  border-radius: 20px;
+  overflow: hidden;
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* ========================================
+   LEFT IMAGE
+======================================== */
+
+.contact-section-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.4s ease;
+}
+
+/* ========================================
+   RIGHT CONTENT
+======================================== */
+
+.contact-section-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  flex: 1;
+  min-width: 0;
+
+  align-self: stretch;
+}
+
+/* ========================================
+   BADGE
+======================================== */
+
+.contact-section-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 175px;
+  min-height: 36px;
+
+  padding: 6px 22px;
+
+  background-color: #FFB027;
+  border-radius: 30px;
+
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: #FFFFFF;
+
+  box-sizing: border-box;
+}
+
+/* ========================================
+   HEADING
+======================================== */
+
+.contact-section-right h2 {
+  margin: 35px 0 0;
+  padding: 0;
+
+  font-family: "Reem Kufi", sans-serif;
+  font-size: clamp(36px, 3.5vw, 58px);
+  font-weight: 700;
+  line-height: 1.15;
+
+  color: #050505;
+}
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.contact-section-right p {
+  width: 100%;
+  max-width: 640px;
+
+  margin: 22px 0 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.45;
+
+  color: #808080;
+}
+
+/* ========================================
+   CONTACT BUTTON
+======================================== */
+
+.contact-section-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+
+  margin-top: auto;
+  padding-top: 35px;
+}
+
+.contact-section-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  min-width: 190px;
+  min-height: 46px;
+
+  padding: 8px 22px;
+
+  background-color: #FFB027;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+
+  text-decoration: none;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: #FFFFFF;
+
+  box-sizing: border-box;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.contact-section-btn-arrow {
+  font-family: Arial, sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* ========================================
+   HOVER EFFECTS
+======================================== */
+
+@media (hover: hover) {
+  .contact-section-image-container:hover .contact-section-image {
+    transform: scale(1.04);
+  }
+
+  .contact-section-btn:hover {
+    background-color: #F2A21F;
+    transform: translateY(-2px);
+  }
+}
+
+.contact-section-btn:focus-visible {
+  outline: 3px solid #252F2D;
+  outline-offset: 4px;
+}
+
+/* ========================================
+   LARGE DESKTOPS — 1440px+
+======================================== */
+
+@media (min-width: 1440px) {
+  .contact-section-content {
+    gap: 65px;
+    padding: 80px 60px;
+  }
+
+  .contact-section-image-container {
+    height: 500px;
+  }
+
+  .contact-section-right h2 {
+    font-size: 58px;
+  }
+
+  .contact-section-right p {
+    font-size: 25px;
+  }
+}
+
+/* ========================================
+   LAPTOPS — 1025px to 1439px
+======================================== */
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .contact-section-content {
+    gap: 45px;
+    padding: 65px 45px;
+  }
+
+  .contact-section-image-container {
+    height: 440px;
+  }
+
+  .contact-section-right h2 {
+    font-size: clamp(36px, 3.4vw, 50px);
+  }
+
+  .contact-section-right p {
+    font-size: 22px;
+  }
+}
+
+/* ========================================
+   TABLETS — 769px to 1024px
+======================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-section-content {
+    gap: 35px;
+    padding: 60px 35px;
+  }
+
+  .contact-section-image-container {
+    flex-basis: 45%;
+    height: 400px;
+  }
+
+  .contact-section-right h2 {
+    margin-top: 25px;
+    font-size: 38px;
+  }
+
+  .contact-section-right p {
+    font-size: 20px;
+  }
+
+  .contact-section-btn {
+    font-size: 19px;
+  }
+}
+
+/* ========================================
+   SMALL TABLETS — 481px to 768px
+======================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .contact-section-content {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 35px;
+    padding: 50px 30px;
+  }
+
+  .contact-section-image-container {
+    flex: none;
+
+    width: 100%;
+    height: 390px;
+  }
+
+  .contact-section-right {
+    width: 100%;
+    align-self: auto;
+  }
+
+  .contact-section-right h2 {
+    margin-top: 25px;
+    font-size: clamp(36px, 6vw, 48px);
+  }
+
+  .contact-section-right p {
+    font-size: 21px;
+  }
+
+  .contact-section-btn-container {
+    margin-top: 30px;
+    padding-top: 0;
+  }
+}
+
+/* ========================================
+   MOBILE — 480px AND BELOW
+======================================== */
+
+@media (max-width: 480px) {
+  .contact-section-content {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .contact-section-image-container {
+    flex: none;
+
+    width: 100%;
+    height: 300px;
+
+    border-radius: 18px;
+  }
+
+  .contact-section-right {
+    width: 100%;
+    align-self: auto;
+  }
+
+  .contact-section-badge {
+    min-width: 140px;
+    min-height: 32px;
+
+    font-size: 16px;
+  }
+
+  .contact-section-right h2 {
+    margin-top: 22px;
+    font-size: clamp(30px, 8vw, 40px);
+    line-height: 1.2;
+  }
+
+  .contact-section-right h2 br {
+    display: none;
+  }
+
+  .contact-section-right p {
+    margin-top: 18px;
+    font-size: 19px;
+    line-height: 1.45;
+  }
+
+  .contact-section-btn-container {
+    margin-top: 25px;
+    padding-top: 0;
+  }
+
+  .contact-section-btn {
+    min-width: 175px;
+    min-height: 45px;
+    font-size: 19px;
+  }
+}
+
+/* ========================================
+   VERY SMALL MOBILE — 360px AND BELOW
+======================================== */
+
+@media (max-width: 360px) {
+  .contact-section-content {
+    padding: 35px 15px;
+  }
+
+  .contact-section-image-container {
+    height: 260px;
+  }
+
+  .contact-section-right h2 {
+    font-size: 29px;
+  }
+
+  .contact-section-right p {
+    font-size: 17px;
+  }
+}
+
+/* ========================================
+   REDUCED MOTION ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-section-image,
+  .contact-section-btn {
+    transition: none;
+  }
+}

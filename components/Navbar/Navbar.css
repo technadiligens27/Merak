@@ -1,0 +1,338 @@
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.merak-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0%;  
+  width: 100%;
+  z-index: 1000;
+
+  background: transparent;
+  padding: 20px 24px;
+  box-sizing: border-box;
+
+  font-family: "Jaldi", sans-serif;
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.merak-nav-container {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding-left: 12px;
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.merak-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.merak-logo-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffb027;
+  border-radius: 15px;
+
+  color: white;
+  font-family: "Reem Kufi", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.merak-logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+}
+
+/* ==========================================
+   NAV LINKS
+========================================== */
+
+.merak-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: clamp(16px, 2.4vw, 42px);
+}
+
+.merak-nav-link {
+  color: white;
+  text-decoration: none;
+
+  font-size: 22px;
+  font-weight: bold;
+  white-space: nowrap;
+
+  transition: color 0.25s ease;
+}
+
+.merak-nav-link:hover,
+.merak-nav-link.active {
+  color: #ffb027;
+}
+
+/* ==========================================
+   DROPDOWN
+========================================== */
+
+.merak-dropdown {
+  position: relative;
+}
+
+.merak-dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  color: white;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.merak-dropdown-btn:hover {
+  color: #ffb027;
+}
+
+.merak-dropdown-arrow {
+  display: flex;
+  align-items: center;
+  transition: transform 0.25s ease;
+}
+
+.merak-dropdown-arrow.rotated {
+  transform: rotate(180deg);
+}
+
+.merak-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 18px);
+  right: 0;
+
+  min-width: 170px;
+  padding: 10px;
+
+  background: rgba(30, 30, 30, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.merak-dropdown-menu a {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  border-radius: 6px;
+}
+
+.merak-dropdown-menu a:hover {
+  background: rgba(255, 176, 39, 0.15);
+  color: #ffb027;
+}
+
+/* ==========================================
+   CONTACT BUTTON
+========================================== */
+
+.merak-contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffb027;
+  color: white;
+
+  padding: 6px 28px;
+  border-radius: 30px;
+
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+
+  line-height: 1.35;
+  white-space: nowrap;
+  flex-shrink: 0;
+
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.merak-contact-btn:hover {
+  background: #f29f16;
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   MOBILE MENU BUTTON
+========================================== */
+
+.merak-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  padding: 8px;
+}
+
+.merak-menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+
+  background: white;
+  border-radius: 5px;
+
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.merak-menu-toggle.open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.merak-menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.merak-menu-toggle.open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1400px) {
+  .merak-nav-container {
+    gap: 18px;
+  }
+
+  .merak-nav-links {
+    gap: 20px;
+  }
+
+  .merak-nav-link,
+  .merak-dropdown-btn,
+  .merak-contact-btn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .merak-navbar {
+    padding: 18px 24px;
+  }
+
+  .merak-nav-links {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    padding: 24px;
+
+    background: rgba(20, 20, 20, 0.96);
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+
+    box-sizing: border-box;
+  }
+
+  .merak-nav-links.merak-nav-open {
+    display: flex;
+  }
+
+  .merak-menu-toggle {
+    display: flex;
+  }
+
+  .merak-dropdown-menu {
+    position: static;
+    margin-top: 12px;
+  }
+
+  .merak-contact-btn {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .merak-navbar {
+    padding: 15px 16px;
+  }
+
+  .merak-logo {
+    gap: 10px;
+  }
+
+  .merak-logo-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+  }
+
+  .merak-logo-text {
+    font-size: 22px;
+  }
+
+  .merak-contact-btn {
+    padding: 6px 12px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 380px) {
+  .merak-contact-btn {
+    display: none;
+  }
+
+  .merak-menu-toggle {
+    margin-left: auto;
+  }
+}

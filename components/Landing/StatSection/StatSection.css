@@ -1,0 +1,420 @@
+
+/* ========================================
+   STAT SECTION — BASE / DESKTOP
+======================================== */
+
+.stat-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 300px;
+
+  background-color: #FF9F17;
+
+  box-sizing: border-box;
+}
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+.stat-section-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 55px;
+
+  width: 100%;
+  max-width: 1500px;
+
+  padding: 65px 50px;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+/* ========================================
+   LEFT CONTENT
+======================================== */
+
+.stat-section-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  flex: 0 1 40%;
+  min-width: 0;
+}
+
+/* ========================================
+   BADGE
+======================================== */
+
+.stat-section-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 255px;
+  min-height: 35px;
+
+  padding: 7px 20px;
+
+  background-color: #FFF3DF;
+  border-radius: 13px;
+
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  line-height: 1.2;
+
+  color: #969696;
+
+  box-sizing: border-box;
+}
+
+/* ========================================
+   HEADING
+======================================== */
+
+.stat-section-left h2 {
+  margin: 22px 0 0;
+  padding: 0;
+
+  font-family: "Reem Kufi", sans-serif;
+  font-size: clamp(34px, 3.2vw, 50px);
+  font-weight: 700;
+  line-height: 1.3;
+
+  color: #FFFFFF;
+}
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.stat-section-left p {
+  width: 100%;
+  max-width: 520px;
+
+  margin: 18px 0 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  color: #FFFFFF;
+}
+
+/* ========================================
+   RIGHT CONTENT
+======================================== */
+
+.stat-section-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+
+  flex: 1;
+  min-width: 0;
+}
+
+/* ========================================
+   STATISTIC CARDS
+======================================== */
+
+.stat-section-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  flex: 1;
+  min-width: 0;
+  min-height: 165px;
+
+  padding: 26px 28px;
+
+  background-color: #FFB027;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 18px;
+
+  box-shadow: 0 6px 18px rgba(145, 85, 0, 0.25);
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* ========================================
+   STATISTIC NUMBERS
+======================================== */
+
+.stat-section-card h3 {
+  margin: 0;
+
+  font-family: "Reem Kufi", sans-serif;
+  font-size: clamp(38px, 3.5vw, 60px);
+  font-weight: 500;
+  line-height: 1.2;
+
+  color: #E5FFF2;
+}
+
+/* ========================================
+   STATISTIC DESCRIPTIONS
+======================================== */
+
+.stat-section-card p {
+  margin: 7px 0 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.2;
+
+  color: #FFFFFF;
+}
+
+/* ========================================
+   HOVER EFFECTS
+======================================== */
+
+@media (hover: hover) {
+  .stat-section-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(145, 85, 0, 0.3);
+  }
+}
+
+/* ========================================
+   LARGE DESKTOPS — 1440px+
+======================================== */
+
+@media (min-width: 1440px) {
+  .stat-section {
+    height: 470px;
+  }
+
+  .stat-section-content {
+    padding: 75px 60px;
+  }
+
+  .stat-section-card {
+    min-height: 175px;
+  }
+}
+
+/* ========================================
+   LAPTOPS — 1025px to 1439px
+======================================== */
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .stat-section-content {
+    gap: 35px;
+    padding: 60px 45px;
+  }
+
+  .stat-section-left {
+    flex-basis: 40%;
+  }
+
+  .stat-section-left h2 {
+    font-size: clamp(32px, 3vw, 44px);
+  }
+
+  .stat-section-card {
+    padding: 22px 20px;
+  }
+
+  .stat-section-card h3 {
+    font-size: clamp(36px, 3.5vw, 52px);
+  }
+
+  .stat-section-card p {
+    font-size: 16px;
+  }
+}
+
+/* ========================================
+   TABLETS — 769px to 1024px
+======================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .stat-section-content {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 40px;
+    padding: 55px 40px;
+  }
+
+  .stat-section-left {
+    flex: none;
+    width: 100%;
+  }
+
+  .stat-section-left h2 {
+    font-size: 44px;
+  }
+
+  .stat-section-right {
+    justify-content: stretch;
+    width: 100%;
+  }
+
+  .stat-section-card {
+    min-height: 155px;
+  }
+}
+
+/* ========================================
+   SMALL TABLETS — 481px to 768px
+======================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .stat-section-content {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 35px;
+    padding: 50px 30px;
+  }
+
+  .stat-section-left {
+    flex: none;
+    width: 100%;
+  }
+
+  .stat-section-left h2 {
+    font-size: clamp(35px, 6vw, 45px);
+  }
+
+  .stat-section-left p {
+    font-size: 20px;
+  }
+
+  .stat-section-right {
+    width: 100%;
+  }
+
+  .stat-section-card {
+    min-height: 145px;
+    padding: 20px 15px;
+  }
+
+  .stat-section-card h3 {
+    font-size: 38px;
+  }
+
+  .stat-section-card p {
+    font-size: 15px;
+  }
+}
+
+/* ========================================
+   MOBILE — 480px AND BELOW
+======================================== */
+
+@media (max-width: 480px) {
+  .stat-section-content {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 35px;
+    padding: 45px 20px;
+  }
+
+  .stat-section-left {
+    flex: none;
+    width: 100%;
+  }
+
+  .stat-section-badge {
+    min-width: 205px;
+    min-height: 32px;
+
+    font-size: 11px;
+    letter-spacing: 1.8px;
+  }
+
+  .stat-section-left h2 {
+    font-size: clamp(29px, 8vw, 38px);
+    line-height: 1.25;
+  }
+
+  .stat-section-left p {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+
+  .stat-section-right {
+    flex-direction: column;
+    gap: 15px;
+
+    width: 100%;
+  }
+
+  .stat-section-card {
+    flex: none;
+
+    width: 100%;
+    min-height: 130px;
+
+    padding: 20px 25px;
+  }
+
+  .stat-section-card h3 {
+    font-size: 44px;
+  }
+
+  .stat-section-card p {
+    font-size: 17px;
+  }
+}
+
+/* ========================================
+   VERY SMALL MOBILE — 360px AND BELOW
+======================================== */
+
+@media (max-width: 360px) {
+  .stat-section-content {
+    padding: 40px 15px;
+  }
+
+  .stat-section-left h2 {
+    font-size: 28px;
+  }
+
+  .stat-section-left p {
+    font-size: 17px;
+  }
+
+  .stat-section-card {
+    min-height: 115px;
+  }
+}
+
+/* ========================================
+   REDUCED MOTION ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .stat-section-card {
+    transition: none;
+  }
+}

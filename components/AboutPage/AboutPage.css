@@ -1,0 +1,1407 @@
+
+/* ========================================
+   ABOUT PAGE — BASE
+======================================== */
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+/* ========================================
+   SHARED CONTENT CONTAINER
+======================================== */
+
+.about-page-content {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 1500px;
+
+  padding-left: 50px;
+  padding-right: 50px;
+
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.about-page-hero {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 420px;
+
+  background-color: #252525;
+
+  overflow: hidden;
+  isolation: isolate;
+  box-sizing: border-box;
+}
+
+/* ========================================
+   HERO BACKGROUND IMAGE
+======================================== */
+
+.about-page-hero-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  z-index: -2;
+}
+
+/* ========================================
+   HERO DARK OVERLAY
+======================================== */
+
+.about-page-hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-color: rgba(0, 0, 0, 0.58);
+
+  z-index: -1;
+}
+
+/* ========================================
+   HERO CONTENT
+======================================== */
+
+.about-page-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 1100px;
+
+  padding: 135px 30px 90px;
+
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ========================================
+   HERO TYPOGRAPHY
+======================================== */
+
+.about-page-hero-content h1 {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Reem Kufi", sans-serif;
+  font-size: clamp(55px, 6vw, 90px);
+  font-weight: 700;
+  line-height: 1.1;
+
+  color: #FFFFFF;
+}
+
+.about-page-hero-content p {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 20px 0 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+
+  color: #FFFFFF;
+}
+
+/* ========================================
+   INTRODUCTION SECTION
+======================================== */
+
+.about-page-intro-section {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  background-color: #FFFFFF;
+}
+
+/* ========================================
+   IMAGE GALLERY
+======================================== */
+
+.about-page-gallery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  width: 100%;
+
+  margin-top: -55px;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* ========================================
+   GALLERY IMAGE CONTAINERS
+======================================== */
+
+.about-page-gallery-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1;
+  min-width: 0;
+
+  border-radius: 18px;
+  overflow: hidden;
+
+  background-color: #F5F5F5;
+
+  box-shadow: 0 9px 20px rgba(0, 0, 0, 0.14);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-page-gallery-item img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.4s ease;
+}
+
+/* ========================================
+   INDIVIDUAL GALLERY IMAGES
+======================================== */
+
+.about-gallery-one {
+  height: 285px;
+  margin-top: -35px;
+}
+
+.about-gallery-two {
+  height: 205px;
+  margin-top: 15px;
+}
+
+.about-gallery-three {
+  height: 285px;
+  margin-top: -35px;
+}
+
+.about-gallery-four {
+  height: 165px;
+  margin-top: 15px;
+}
+
+/* ========================================
+   INTRODUCTION CONTENT
+======================================== */
+
+.about-page-intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+
+  padding-top: 60px;
+}
+
+/* ========================================
+   INTRODUCTION HEADING
+======================================== */
+
+.about-page-intro-content h2 {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Reem Kufi", sans-serif;
+  font-size: clamp(40px, 4vw, 62px);
+  font-weight: 700;
+  line-height: 1.15;
+
+  color: #050505;
+}
+
+/* ========================================
+   INTRODUCTION DESCRIPTION
+======================================== */
+
+.about-page-intro-description {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  gap: 50px;
+
+  width: 100%;
+
+  padding-top: 25px;
+}
+
+.about-page-intro-description p {
+  flex: 1;
+  min-width: 0;
+
+  margin: 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.55;
+
+  color: #747474;
+}
+
+/* ========================================
+   ORANGE DIVIDER
+======================================== */
+
+.about-page-section-divider {
+  display: block;
+
+  width: 215px;
+  height: 8px;
+
+  margin: 80px auto 0;
+
+  background-color: #FFB027;
+  border-radius: 20px;
+}
+
+/* ========================================
+   MISSION VIDEO SECTION
+======================================== */
+
+.about-page-mission-section {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  padding-top: 95px;
+
+  background-color: #FFFFFF;
+}
+
+/* ========================================
+   MISSION CONTAINER
+======================================== */
+
+.about-page-mission-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+
+  width: 100%;
+}
+
+/* ========================================
+   VIDEO CONTAINER
+======================================== */
+
+.about-page-video-container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 45%;
+  min-width: 0;
+
+  height: 410px;
+
+  background-color: #333333;
+
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   VIDEO
+======================================== */
+
+.about-page-video {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* ========================================
+   VIDEO PLAY BUTTON
+======================================== */
+
+.about-page-video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 75px;
+  height: 75px;
+
+  padding: 15px;
+
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 50%;
+
+  color: #555555;
+  cursor: pointer;
+
+  transform: translate(-50%, -50%);
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.about-page-video-play svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* ========================================
+   VIDEO CAPTION
+======================================== */
+
+.about-page-video-caption {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 280px;
+  min-height: 70px;
+
+  padding: 14px 25px;
+
+  background-color: #FFFFFF;
+
+  border: 1px solid #D5D5D5;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #252525;
+
+  text-align: center;
+  white-space: nowrap;
+
+  transform: translateX(-50%);
+
+  box-sizing: border-box;
+}
+
+/* ========================================
+   MISSION CONTENT
+======================================== */
+
+.about-page-mission-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  flex: 1;
+  min-width: 0;
+}
+
+/* ========================================
+   MISSION HEADING
+======================================== */
+
+.about-page-mission-content h2 {
+  margin: 0;
+
+  font-family: "Reem Kufi", sans-serif;
+  font-size: clamp(40px, 4vw, 62px);
+  font-weight: 700;
+  line-height: 1.15;
+
+  color: #050505;
+}
+
+/* ========================================
+   MISSION DESCRIPTION
+======================================== */
+
+.about-page-mission-content p {
+  width: 100%;
+
+  margin: 22px 0 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  color: #747474;
+}
+
+/* ========================================
+   VALUES SECTION
+======================================== */
+
+.about-page-values-section {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  padding-top: 115px;
+  padding-bottom: 95px;
+
+  background-color: #FFFFFF;
+}
+
+/* ========================================
+   VALUES CARD CONTAINER
+======================================== */
+
+.about-page-values-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  width: 100%;
+}
+
+/* ========================================
+   VALUE CARD
+======================================== */
+
+.about-page-value-card {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+  min-width: 0;
+  min-height: 350px;
+
+  overflow: hidden;
+
+  background-color: #FFFFFF;
+
+  border-radius: 12px;
+
+  box-shadow: 0 9px 23px rgba(0, 0, 0, 0.17);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* ========================================
+   VALUE CARD HEADER
+======================================== */
+
+.about-page-value-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 68px;
+
+  padding: 12px 20px;
+
+  background-color: #FFB027;
+
+  box-sizing: border-box;
+}
+
+.about-page-value-card-header h3 {
+  margin: 0;
+
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: #FFFFFF;
+}
+
+/* ========================================
+   VALUE CARD CONTENT
+======================================== */
+
+.about-page-value-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1;
+
+  width: 100%;
+
+  padding: 30px 25px 35px;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+/* ========================================
+   VALUE CARD ICON
+======================================== */
+
+.about-page-value-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+
+  margin-bottom: 20px;
+
+  font-size: 62px;
+  line-height: 1;
+}
+
+/* ========================================
+   VALUE CARD DESCRIPTION
+======================================== */
+
+.about-page-value-card-content p {
+  margin: 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  color: #747474;
+}
+
+/* ========================================
+   BOTTOM CTA SECTION
+======================================== */
+
+.about-page-cta-section {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  padding-top: 40px;
+  padding-bottom: 120px;
+
+  background-color: #FFFFFF;
+}
+
+/* ========================================
+   CTA CONTAINER
+======================================== */
+
+.about-page-cta-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 65px;
+
+  width: 100%;
+}
+
+/* ========================================
+   CTA CONTENT
+======================================== */
+
+.about-page-cta-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  flex: 1;
+  min-width: 0;
+}
+
+/* ========================================
+   CTA HEADING
+======================================== */
+
+.about-page-cta-content h2 {
+  margin: 0;
+
+  font-family: "Reem Kufi", sans-serif;
+  font-size: clamp(40px, 4vw, 62px);
+  font-weight: 700;
+  line-height: 1.15;
+
+  color: #050505;
+}
+
+/* ========================================
+   CTA DESCRIPTION
+======================================== */
+
+.about-page-cta-content p {
+  max-width: 680px;
+
+  margin: 23px 0 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  color: #747474;
+}
+
+/* ========================================
+   CTA BUTTON CONTAINER
+======================================== */
+
+.about-page-cta-btn-container {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  padding-top: 30px;
+}
+
+/* ========================================
+   CTA BUTTON
+======================================== */
+
+.about-page-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+
+  min-width: 220px;
+  min-height: 48px;
+
+  padding: 8px 25px;
+
+  background-color: #FFB027;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+
+  text-decoration: none;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+
+  color: #FFFFFF;
+
+  box-sizing: border-box;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.about-page-cta-arrow {
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* ========================================
+   CTA IMAGE CONTAINER
+======================================== */
+
+.about-page-cta-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 40%;
+  min-width: 0;
+
+  height: 365px;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.17);
+}
+
+/* ========================================
+   CTA IMAGE
+======================================== */
+
+.about-page-cta-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.4s ease;
+}
+
+/* ========================================
+   HOVER EFFECTS
+======================================== */
+
+@media (hover: hover) {
+  .about-page-gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .about-page-gallery-item:hover img {
+    transform: scale(1.05);
+  }
+
+  .about-page-value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .about-page-cta-btn:hover {
+    background-color: #F2A21F;
+    transform: translateY(-2px);
+  }
+
+  .about-page-cta-image-container:hover img {
+    transform: scale(1.04);
+  }
+
+  .about-page-video-play:hover {
+    background-color: #FFB027;
+    color: #FFFFFF;
+  }
+}
+
+/* ========================================
+   FOCUS ACCESSIBILITY
+======================================== */
+
+.about-page-video-play:focus-visible,
+.about-page-cta-btn:focus-visible {
+  outline: 3px solid #252525;
+  outline-offset: 4px;
+}
+
+/* ========================================
+   LARGE DESKTOPS — 1440px+
+======================================== */
+
+@media (min-width: 1440px) {
+  .about-page-content {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .about-page-hero {
+    min-height: 450px;
+  }
+
+  .about-page-gallery-item.about-gallery-one,
+  .about-page-gallery-item.about-gallery-three {
+    height: 310px;
+  }
+
+  .about-page-gallery-item.about-gallery-two {
+    height: 220px;
+  }
+
+  .about-page-gallery-item.about-gallery-four {
+    height: 185px;
+  }
+
+  .about-page-video-container {
+    height: 440px;
+  }
+
+  .about-page-cta-image-container {
+    height: 395px;
+  }
+}
+
+/* ========================================
+   LAPTOPS — 1025px to 1439px
+======================================== */
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .about-page-content {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .about-page-gallery {
+    gap: 16px;
+  }
+
+  .about-page-gallery-item.about-gallery-one,
+  .about-page-gallery-item.about-gallery-three {
+    height: 260px;
+  }
+
+  .about-page-gallery-item.about-gallery-two {
+    height: 190px;
+  }
+
+  .about-page-gallery-item.about-gallery-four {
+    height: 150px;
+  }
+
+  .about-page-intro-content h2,
+  .about-page-mission-content h2,
+  .about-page-cta-content h2 {
+    font-size: clamp(38px, 4vw, 54px);
+  }
+
+  .about-page-intro-description p,
+  .about-page-mission-content p,
+  .about-page-cta-content p {
+    font-size: 20px;
+  }
+
+  .about-page-mission-container {
+    gap: 45px;
+  }
+
+  .about-page-video-container {
+    height: 370px;
+  }
+
+  .about-page-value-card {
+    min-height: 330px;
+  }
+
+  .about-page-value-card-content p {
+    font-size: 19px;
+  }
+
+  .about-page-cta-image-container {
+    height: 340px;
+  }
+}
+
+/* ========================================
+   TABLETS — 769px to 1024px
+======================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-page-content {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .about-page-hero {
+    min-height: 380px;
+  }
+
+  .about-page-hero-content {
+    padding: 120px 30px 75px;
+  }
+
+  .about-page-gallery {
+    gap: 12px;
+  }
+
+  .about-page-gallery-item.about-gallery-one,
+  .about-page-gallery-item.about-gallery-three {
+    height: 220px;
+  }
+
+  .about-page-gallery-item.about-gallery-two {
+    height: 170px;
+  }
+
+  .about-page-gallery-item.about-gallery-four {
+    height: 140px;
+  }
+
+  .about-page-intro-content h2 {
+    font-size: 46px;
+  }
+
+  .about-page-intro-description {
+    gap: 30px;
+  }
+
+  .about-page-intro-description p {
+    font-size: 19px;
+  }
+
+  .about-page-mission-container {
+    gap: 30px;
+  }
+
+  .about-page-video-container {
+    flex-basis: 47%;
+    height: 310px;
+  }
+
+  .about-page-mission-content h2 {
+    font-size: 41px;
+  }
+
+  .about-page-mission-content p {
+    font-size: 18px;
+  }
+
+  .about-page-values-container {
+    gap: 16px;
+  }
+
+  .about-page-value-card {
+    min-height: 340px;
+  }
+
+  .about-page-value-card-content {
+    padding: 25px 16px;
+  }
+
+  .about-page-value-card-content p {
+    font-size: 17px;
+  }
+
+  .about-page-cta-container {
+    gap: 35px;
+  }
+
+  .about-page-cta-content h2 {
+    font-size: 42px;
+  }
+
+  .about-page-cta-content p {
+    font-size: 19px;
+  }
+
+  .about-page-cta-image-container {
+    height: 300px;
+  }
+}
+
+/* ========================================
+   SMALL TABLETS — 481px to 768px
+======================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .about-page-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .about-page-hero {
+    min-height: 360px;
+  }
+
+  .about-page-hero-content {
+    padding: 120px 25px 75px;
+  }
+
+  .about-page-hero-content h1 {
+    font-size: 60px;
+  }
+
+  .about-page-hero-content p {
+    font-size: 21px;
+  }
+
+  .about-page-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+
+    margin-top: -35px;
+  }
+
+  .about-page-gallery-item {
+    width: 100%;
+    height: 220px !important;
+    margin-top: 0;
+  }
+
+  .about-page-intro-content {
+    padding-top: 45px;
+  }
+
+  .about-page-intro-content h2 {
+    font-size: clamp(36px, 6vw, 48px);
+  }
+
+  .about-page-intro-description {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-page-intro-description p {
+    font-size: 20px;
+  }
+
+  .about-page-section-divider {
+    margin-top: 55px;
+  }
+
+  .about-page-mission-section {
+    padding-top: 70px;
+  }
+
+  .about-page-mission-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 65px;
+  }
+
+  .about-page-video-container {
+    flex: none;
+    width: 100%;
+    height: 370px;
+  }
+
+  .about-page-mission-content h2 {
+    font-size: 44px;
+  }
+
+  .about-page-mission-content p {
+    font-size: 20px;
+  }
+
+  .about-page-values-section {
+    padding-top: 75px;
+    padding-bottom: 65px;
+  }
+
+  .about-page-values-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .about-page-value-card {
+    flex: 0 1 calc(50% - 10px);
+    min-height: 310px;
+  }
+
+  .about-page-value-card-content p {
+    font-size: 18px;
+  }
+
+  .about-page-cta-container {
+    flex-direction: column-reverse;
+    gap: 35px;
+  }
+
+  .about-page-cta-image-container {
+    flex: none;
+    width: 100%;
+    height: 340px;
+  }
+
+  .about-page-cta-content {
+    width: 100%;
+  }
+
+  .about-page-cta-content h2 {
+    font-size: 44px;
+  }
+
+  .about-page-cta-content p {
+    font-size: 20px;
+  }
+}
+
+/* ========================================
+   MOBILE — 480px AND BELOW
+======================================== */
+
+@media (max-width: 480px) {
+  .about-page-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-page-hero {
+    min-height: 340px;
+  }
+
+  .about-page-hero-content {
+    padding: 115px 20px 75px;
+  }
+
+  .about-page-hero-content h1 {
+    font-size: clamp(45px, 12vw, 60px);
+  }
+
+  .about-page-hero-content p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .about-page-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+
+    margin-top: -30px;
+  }
+
+  .about-page-gallery-item {
+    width: 100%;
+    height: 155px !important;
+    margin-top: 0;
+
+    border-radius: 13px;
+  }
+
+  .about-page-intro-content {
+    padding-top: 40px;
+  }
+
+  .about-page-intro-content h2 {
+    font-size: clamp(30px, 8vw, 40px);
+    line-height: 1.2;
+  }
+
+  .about-page-intro-content h2 br {
+    display: none;
+  }
+
+  .about-page-intro-description {
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 20px;
+  }
+
+  .about-page-intro-description p {
+    font-size: 18px;
+  }
+
+  .about-page-section-divider {
+    width: 150px;
+    height: 6px;
+    margin-top: 50px;
+  }
+
+  .about-page-mission-section {
+    padding-top: 65px;
+  }
+
+  .about-page-mission-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 65px;
+  }
+
+  .about-page-video-container {
+    flex: none;
+    width: 100%;
+    height: 275px;
+  }
+
+  .about-page-video-play {
+    width: 60px;
+    height: 60px;
+  }
+
+  .about-page-video-caption {
+    min-width: 220px;
+    min-height: 55px;
+
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+
+  .about-page-mission-content h2 {
+    font-size: clamp(30px, 8vw, 42px);
+  }
+
+  .about-page-mission-content h2 br {
+    display: none;
+  }
+
+  .about-page-mission-content p {
+    font-size: 18px;
+  }
+
+  .about-page-values-section {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
+
+  .about-page-values-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-page-value-card {
+    flex: none;
+    width: 100%;
+    min-height: 290px;
+  }
+
+  .about-page-value-card-header {
+    min-height: 60px;
+  }
+
+  .about-page-value-card-header h3 {
+    font-size: 26px;
+  }
+
+  .about-page-value-card-content {
+    padding: 25px 20px;
+  }
+
+  .about-page-value-card-icon {
+    width: 75px;
+    height: 75px;
+
+    font-size: 52px;
+  }
+
+  .about-page-value-card-content p {
+    font-size: 19px;
+  }
+
+  .about-page-cta-section {
+    padding-top: 20px;
+    padding-bottom: 75px;
+  }
+
+  .about-page-cta-container {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .about-page-cta-image-container {
+    flex: none;
+    width: 100%;
+    height: 265px;
+  }
+
+  .about-page-cta-content {
+    width: 100%;
+  }
+
+  .about-page-cta-content h2 {
+    font-size: clamp(30px, 8vw, 40px);
+  }
+
+  .about-page-cta-content h2 br {
+    display: none;
+  }
+
+  .about-page-cta-content p {
+    font-size: 18px;
+  }
+
+  .about-page-cta-btn {
+    min-width: 195px;
+    min-height: 45px;
+    font-size: 18px;
+  }
+}
+
+/* ========================================
+   VERY SMALL MOBILE — 360px AND BELOW
+======================================== */
+
+@media (max-width: 360px) {
+  .about-page-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .about-page-hero-content h1 {
+    font-size: 43px;
+  }
+
+  .about-page-gallery-item {
+    height: 135px !important;
+  }
+
+  .about-page-intro-content h2,
+  .about-page-mission-content h2,
+  .about-page-cta-content h2 {
+    font-size: 29px;
+  }
+
+  .about-page-video-container {
+    height: 230px;
+  }
+
+  .about-page-cta-image-container {
+    height: 230px;
+  }
+}
+
+/* ========================================
+   REDUCED MOTION ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .about-page-gallery-item,
+  .about-page-gallery-item img,
+  .about-page-value-card,
+  .about-page-cta-btn,
+  .about-page-cta-image,
+  .about-page-video-play {
+    transition: none;
+  }
+}

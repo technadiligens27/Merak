@@ -1,0 +1,742 @@
+
+/* ========================================
+   NEWS SECTION — BASE / DESKTOP
+======================================== */
+
+.news-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: #FFF9F0;
+  box-sizing: border-box;
+}
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+.news-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1500px;
+
+  padding: 40px 50px 70px;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.news-section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  width: 100%;
+}
+
+.news-section-header h2 {
+  margin: 0;
+
+  font-family: "Reem Kufi", sans-serif;
+  font-size: clamp(42px, 4.2vw, 70px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #050505;
+}
+
+.news-section-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 190px;
+  height: 36px;
+
+  margin-top: 12px;
+  padding: 4px 20px;
+
+  background-color: #FFB027;
+  border-radius: 30px;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #FFFFFF;
+
+  box-sizing: border-box;
+}
+
+.news-section-header p {
+  width: 100%;
+  max-width: 760px;
+
+  margin: 20px 0 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #808080;
+}
+
+/* ========================================
+   GRID LAYOUT
+======================================== */
+
+.news-section-grid {
+  display: flex;
+  align-items: stretch;
+  gap: 25px;
+
+  width: 100%;
+  height: 495px;
+
+  margin-top: 45px;
+  min-width: 0;
+}
+
+/* ========================================
+   FEATURED CARD
+======================================== */
+
+.news-feature-card {
+  display: flex;
+  flex: 1.45;
+  min-width: 0;
+
+  height: 100%;
+  min-height: 0;
+
+  overflow: hidden;
+
+  background-color: #FFFFFF;
+  border-radius: 22px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================================
+   FEATURED IMAGE
+======================================== */
+
+.news-feature-image {
+  position: relative;
+
+  width: 46%;
+  height: 100%;
+  min-width: 0;
+
+  overflow: hidden;
+}
+
+.news-feature-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ========================================
+   FEATURED CONTENT
+======================================== */
+
+.news-feature-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 54%;
+  height: 100%;
+  min-width: 0;
+
+  padding: 28px 28px 26px;
+
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.news-feature-date {
+  font-family: "Jaldi", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #E59A1A;
+}
+
+.news-feature-content h3 {
+  margin: 8px 0 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #3A302B;
+}
+
+.news-feature-content p {
+  margin: 15px 0 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #7A7A7A;
+}
+
+/* ========================================
+   FEATURED BUTTON
+======================================== */
+
+.news-feature-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: auto;
+
+  min-width: 135px;
+  min-height: 38px;
+  padding: 6px 14px;
+
+  background-color: #FFB027;
+  border-radius: 30px;
+
+  text-decoration: none;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #FFFFFF;
+
+  flex-shrink: 0;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* ========================================
+   RIGHT COLUMN
+======================================== */
+
+.news-side-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  flex: 1;
+  min-width: 0;
+
+  height: 100%;
+  min-height: 0;
+}
+
+/* ========================================
+   SIDE CARD
+======================================== */
+
+.news-side-card {
+  display: flex;
+  align-items: stretch;
+
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 0;
+
+  overflow: hidden;
+
+  background-color: #FFFFFF;
+  border-radius: 22px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================================
+   SIDE CARD IMAGE
+======================================== */
+
+.news-side-image {
+  width: 38%;
+  min-width: 0;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.news-side-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ========================================
+   SIDE CARD CONTENT
+======================================== */
+
+.news-side-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 62%;
+  min-width: 0;
+  height: 100%;
+
+  padding: 18px;
+
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.news-side-tag {
+  font-family: "Jaldi", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #E59A1A;
+}
+
+.news-side-content h3 {
+  margin: 6px 0 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #3A302B;
+}
+
+.news-side-content p {
+  margin: 8px 0 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #7A7A7A;
+}
+
+/* ========================================
+   SIDE CARD ARROW BUTTON
+======================================== */
+
+.news-side-arrow-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+
+  margin-top: auto;
+
+  background-color: #FFB027;
+  border-radius: 50%;
+
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  color: #FFFFFF;
+
+  flex-shrink: 0;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* ========================================
+   BOTTOM BUTTON
+======================================== */
+
+.news-section-btn-container {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  padding-top: 45px;
+}
+
+.news-section-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+
+  min-width: 255px;
+  min-height: 56px;
+  padding: 10px 24px;
+
+  background-color: #FFB027;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+
+  text-decoration: none;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.news-section-btn-arrow {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1;
+}
+
+/* ========================================
+   HOVER EFFECTS
+======================================== */
+
+@media (hover: hover) {
+  .news-feature-btn:hover,
+  .news-side-arrow-btn:hover,
+  .news-section-btn:hover {
+    background-color: #F2A21F;
+    transform: translateY(-2px);
+  }
+}
+
+/* ========================================
+   LARGE DESKTOPS — 1440px+
+======================================== */
+
+@media (min-width: 1440px) {
+  .news-section-grid {
+    height: 525px;
+  }
+}
+
+/* ========================================
+   LAPTOPS — 1025px to 1439px
+======================================== */
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .news-section-content {
+    padding: 40px 45px 65px;
+  }
+
+  .news-section-grid {
+    height: 485px;
+  }
+
+  .news-section-header p {
+    font-size: 23px;
+  }
+
+  .news-feature-content h3 {
+    font-size: 26px;
+  }
+
+  .news-feature-content p {
+    font-size: 17px;
+  }
+
+  .news-side-content p {
+    font-size: 16px;
+  }
+}
+
+/* ========================================
+   TABLETS — 769px to 1024px
+======================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .news-section-content {
+    padding: 40px 35px 60px;
+  }
+
+  .news-section-header h2 {
+    font-size: 50px;
+  }
+
+  .news-section-header p {
+    font-size: 21px;
+  }
+
+  .news-section-grid {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .news-feature-card {
+    flex: none;
+    width: 100%;
+    height: 380px;
+  }
+
+  .news-feature-content {
+    overflow-y: auto;
+  }
+
+  .news-side-column {
+    flex-direction: row;
+    gap: 20px;
+
+    height: auto;
+    width: 100%;
+  }
+
+  .news-side-card {
+    flex: 1;
+    min-width: 0;
+    min-height: 240px;
+    height: auto;
+  }
+
+  .news-side-content {
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .news-side-content p {
+    font-size: 15px;
+  }
+}
+
+/* ========================================
+   SMALL TABLETS — 481px to 768px
+======================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .news-section-content {
+    padding: 35px 30px 55px;
+  }
+
+  .news-section-header h2 {
+    font-size: clamp(36px, 6vw, 48px);
+  }
+
+  .news-section-header p {
+    font-size: 20px;
+  }
+
+  .news-section-grid {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .news-feature-card {
+    flex-direction: column;
+    flex: none;
+
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .news-feature-image,
+  .news-feature-content {
+    width: 100%;
+  }
+
+  .news-feature-image {
+    height: 280px;
+  }
+
+  .news-feature-content {
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .news-side-column {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .news-side-card {
+    flex: none;
+    min-height: 190px;
+    height: auto;
+  }
+
+  .news-side-image {
+    height: auto;
+  }
+
+  .news-side-content {
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .news-side-content p {
+    font-size: 17px;
+  }
+}
+
+/* ========================================
+   MOBILE — 480px AND BELOW
+======================================== */
+
+@media (max-width: 480px) {
+  .news-section-content {
+    padding: 30px 20px 50px;
+  }
+
+  .news-section-header h2 {
+    font-size: clamp(32px, 8vw, 42px);
+  }
+
+  .news-section-badge {
+    min-width: 150px;
+    height: 32px;
+    font-size: 15px;
+  }
+
+  .news-section-header p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .news-section-grid {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .news-feature-card {
+    flex-direction: column;
+    flex: none;
+
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .news-feature-image,
+  .news-feature-content {
+    width: 100%;
+  }
+
+  .news-feature-image {
+    height: 250px;
+  }
+
+  .news-feature-content {
+    height: auto;
+    padding: 22px 20px 24px;
+    overflow-y: visible;
+  }
+
+  .news-feature-content h3 {
+    font-size: 24px;
+  }
+
+  .news-feature-content p {
+    font-size: 16px;
+  }
+
+  .news-feature-btn {
+    margin-top: 20px;
+  }
+
+  .news-side-column {
+    width: 100%;
+    height: auto;
+    gap: 18px;
+  }
+
+  .news-side-card {
+    flex-direction: column;
+    flex: none;
+
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .news-side-image,
+  .news-side-content {
+    width: 100%;
+  }
+
+  .news-side-image {
+    height: 190px;
+  }
+
+  .news-side-content {
+    height: auto;
+    padding: 18px;
+    overflow-y: visible;
+  }
+
+  .news-side-content p {
+    font-size: 16px;
+  }
+
+  .news-side-arrow-btn {
+    margin-top: 20px;
+  }
+
+  .news-section-btn {
+    min-width: 220px;
+    min-height: 50px;
+    font-size: 20px;
+  }
+}
+
+/* ========================================
+   VERY SMALL MOBILE — 360px AND BELOW
+======================================== */
+
+@media (max-width: 360px) {
+  .news-section-content {
+    padding: 25px 15px 40px;
+  }
+
+  .news-section-header h2 {
+    font-size: 30px;
+  }
+
+  .news-section-header p {
+    font-size: 17px;
+  }
+
+  .news-feature-image {
+    height: 220px;
+  }
+
+  .news-side-image {
+    height: 170px;
+  }
+}
+
+/* ========================================
+   REDUCED MOTION ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .news-feature-btn,
+  .news-side-arrow-btn,
+  .news-section-btn {
+    transition: none;
+  }
+}
