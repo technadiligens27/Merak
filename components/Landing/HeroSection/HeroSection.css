@@ -1,0 +1,366 @@
+
+/* ========================================
+   HERO SECTION — BASE / DESKTOP
+======================================== */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+
+  background-image: url("/images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-sizing: border-box;
+}
+
+/* ========================================
+   HERO CONTENT
+======================================== */
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+  margin-top: auto;
+  padding: 40px 50px 80px;
+
+  box-sizing: border-box;
+}
+
+/* ========================================
+   HERO TYPOGRAPHY
+======================================== */
+
+.hero-content h1 {
+  margin: 0 0 0 -12px;
+  padding: 0;
+
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 110px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.hero-content p {
+  width: 100%;
+  max-width: 650px;
+
+  margin: -10px 0 0;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #FFFFFF;
+}
+
+/* ========================================
+   HERO BUTTONS
+======================================== */
+
+.hero-btn-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  width: 100%;
+  padding-top: 31px;
+}
+
+.hero-btn-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  min-height: 48px;
+  padding: 8px 20px;
+
+  border-radius: 32px;
+
+  font-family: "Jaldi", sans-serif;
+  font-size: 21.78px;
+  line-height: 1.2;
+  color: #FFFFFF;
+
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Primary Button */
+
+.hero-btn-container .btn-color {
+  background-color: #FFB027;
+  border: 3px solid #FFB027;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+/* Secondary Button */
+
+.hero-btn-container .hero-btn-2 {
+  background-color: transparent;
+  border: 3px solid #FFFFFF;
+  font-weight: 400;
+}
+
+@media (hover: hover) {
+  .hero-btn-container button:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.hero-btn-container button:focus-visible {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 4px;
+}
+
+/* ========================================
+   LARGE DESKTOPS — 1440px+
+======================================== */
+
+@media (min-width: 1440px) {
+  .hero-content {
+    padding: 50px 50px 80px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(110px, 8vw, 150px);
+  }
+
+  .hero-content p {
+    max-width: 700px;
+    font-size: 32px;
+  }
+}
+
+/* ========================================
+   LAPTOPS — 1025px to 1439px
+======================================== */
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .hero-content {
+    padding: 35px 50px 70px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(80px, 8vw, 110px);
+  }
+
+  .hero-content p {
+    max-width: 650px;
+    font-size: 28px;
+  }
+}
+
+/* ========================================
+   TABLETS — 769px to 1024px
+======================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-content {
+    padding: 30px 40px 65px;
+  }
+
+  .hero-content h1 {
+    font-size: 85px;
+    margin-left: -8px;
+  }
+
+  .hero-content p {
+    max-width: 600px;
+    font-size: 27px;
+    margin-top: -8px;
+  }
+
+  .hero-btn-container {
+    gap: 16px;
+    padding-top: 25px;
+  }
+
+  .hero-btn-container button {
+    width: 180px;
+    font-size: 20px;
+  }
+}
+
+/* ========================================
+   SMALL TABLETS — 481px to 768px
+======================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero-section {
+    background-position: 55% center;
+  }
+
+  .hero-content {
+    padding: 25px 30px 55px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(65px, 10vw, 85px);
+    margin-left: -6px;
+  }
+
+  .hero-content p {
+    max-width: 540px;
+    font-size: 24px;
+    margin-top: -5px;
+    line-height: 1.4;
+  }
+
+  .hero-btn-container {
+    gap: 15px;
+    padding-top: 25px;
+  }
+
+  .hero-btn-container button {
+    width: 170px;
+    min-height: 46px;
+    font-size: 19px;
+  }
+}
+
+/* ========================================
+   MOBILE — 480px AND BELOW
+======================================== */
+
+@media (max-width: 480px) {
+  .hero-section {
+    background-position: 60% center;
+  }
+
+  .hero-content {
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(52px, 14vw, 70px);
+    line-height: 1.1;
+    margin-left: -5px;
+    margin: auto;
+
+  }
+
+  .hero-content p {
+    max-width: 100%;
+    margin-top: 8px;
+    margin: auto;
+    text-align: center;
+    font-size: clamp(18px, 5vw, 22px);
+    line-height: 1.4;
+  }
+
+  .hero-btn-container {
+    flex-direction: column;
+    gap: 12px;
+    margin: auto;
+    padding-top: 25px;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .hero-btn-container button {
+    width: 100%;
+    max-width: 280px;
+    min-height: 48px;
+    font-size: 19px;
+  }
+}
+
+/* ========================================
+   VERY SMALL MOBILE — 360px AND BELOW
+======================================== */
+
+@media (max-width: 360px) {
+  .hero-section {
+    background-position: 30% center;
+  }
+
+  .hero-content {
+    margin-top: auto;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(52px, 14vw, 70px);
+    line-height: 1.1;
+    margin-left: -5px;
+    margin: auto;
+
+  }
+
+  .hero-content p {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: clamp(18px, 5vw, 22px);
+    line-height: 1.4;
+  }
+
+  .hero-btn-container {
+    flex-direction: column;
+    gap: 12px;
+    margin: auto;
+    padding-top: 25px;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .hero-btn-container button {
+    width: 100%;
+    max-width: 280px;
+    min-height: 48px;
+    font-size: 19px;
+  }
+}
+
+/* ========================================
+   SHORT SCREENS / LANDSCAPE PHONES
+======================================== */
+
+@media (max-height: 600px) and (min-width: 481px) {
+  .hero-content {
+    padding-top: 24px;
+    padding-bottom: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(48px, 7vw, 85px);
+  }
+
+  .hero-content p {
+    font-size: clamp(18px, 2.5vw, 26px);
+    margin-top: 0;
+  }
+
+  .hero-btn-container {
+    padding-top: 18px;
+  }
+}
+
+/* ========================================
+   REDUCED MOTION ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-btn-container button {
+    transition: none;
+  }
+}
